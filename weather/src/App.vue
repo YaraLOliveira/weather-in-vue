@@ -25,7 +25,6 @@ export default {
     return {
       api_key: "2b8cf3d65d7953a964a6f1c8b90f60ba",
       api_url: "https://api.openweathermap.org/data/2.5/",
-      country:"",
       state: "",
       icon: "",
       weather: ""
@@ -88,11 +87,12 @@ main {
 .search-box .search-bar {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
+  text-transform: capitalize;
 
 
   color: #000000;
-  font-size: 20px;
+  font-size: 17px;
 
   appearance: none;
   bottom: none;
@@ -145,6 +145,7 @@ main {
 .weather-box .icon {
   display: inline-block;
   color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
 
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25 );
   /* background-color: rgba(0, 0, 0, 0.25); */
